@@ -6,7 +6,7 @@ test-cases:
 
 - summary: |
     Отображение флага языка интерфейса сайта 
-    status: fail
+  status: fail
 
 - summary: |
       Проверка успешного оформления товара
