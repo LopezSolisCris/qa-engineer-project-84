@@ -24,7 +24,7 @@ test-cases:
       Проверка перевода страницы на русский язык
   status: fail
   
-bugreports:
+  bugreports:
 - summary: |
       Описание товаров не переводится на русский язык
   environment: |
