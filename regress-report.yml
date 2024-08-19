@@ -1,38 +1,38 @@
 ---
 test-cases:
-  - summary: |
+- summary: |
       Проверка наличия мобильной версии сайта 
   status: fail
 
-  - summary: |
+- summary: |
     Отображение флага языка интерфейса сайта 
   status: fail
 
 - summary: |
       Проверка успешного оформления товара
-status: fail
+  status: fail
 
 - summary: |
       Проверка закрытия уведомления о успешном офрмлении заказа через "крестик"
-    status: fail
+  status: fail
 
  - summary: |
       Проверка работы фильтров цены
-    status: fail
+  status: fail
 
 bugreports:
   - summary: |
       Не отображаются флаги языков интерфейса 
-    environment: |
+     environment: |
        Google Chrome.Версия 127.0.6533.89 (Официальная сборка), (64 бит)
        Windows 10 Домашняя
-    steps-to-reproduce: |
+     steps-to-reproduce: |
       1. Зайти на страницу сайта интернет магазина https://hexlet-products-store.vercel.app/
       2. Перейти к блоку "Язык"
       3. Развернуть выпадающий список
-    expected-result: |
+     expected-result: |
      Выпадает дропдаун выбора языка с соответствующими флагами
-    actual-result: |
+     actual-result: |
       Флаги языков отсутсвуют
 bugreports:
   - summary: |
