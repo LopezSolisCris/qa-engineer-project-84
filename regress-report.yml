@@ -1,62 +1,68 @@
 ---
 test-cases:
-  - summary: |
+- summary: |
       Проверка наличия мобильной версии сайта 
-    status: fail
-  - summary: |
+  status: fail
+  
+- summary: |
       Отображение флага языка интерфейса сайта 
-    status: fail
-  - summary: |
+  status: fail
+  
+- summary: |
       Проверка успешного оформления товара
-    status: fail
-  - summary: |
+  status: fail
+ 
+- summary: |
       Проверка закрытия уведомления о успешном офрмлении заказа через "крестик"
-    status: fail
-  - summary: |
+  status: fail
+  
+- summary: |
       Проверка работы фильтров цены
-    status: fail
+  status: fail
+
 bugreports:
-  - summary: |
+- summary: |
       Не отображаются флаги языков интерфейса 
-    environment: |
+  environment: |
       Google Chrome.Версия 127.0.6533.89 (Официальная сборка), (64 бит)
       Windows 10 Домашняя
-    steps-to-reproduce: >
+  steps-to-reproduce: >
       1. Перейти к блоку "Язык"
       2. Развернуть выпадающий список
-    expected-result: |
+  expected-result: |
       Выпадает дропдаун выбора языка с соответствующими флагами
-      actual-result: |
+  actual-result: |
        Флаги языков отсутсвуют
-    bugreports: 
-  - summary: |
+  bugreports: 
+- summary: |
       Не работает функционал оформления заказа
-    environment: |
+  environment: |
       Google Chrome.Версия 127.0.6533.89 (Официальная сборка), (64 бит)
        Windows 10 Домашняя
-    steps-to-reproduce: >
+  steps-to-reproduce: >
       1.Нажать на кнопку " в корзину" на товаре 
       2. Перейти в корзину 
       3. Нажать на кнопку "Оформить заказ"
-    expected-result: |
+  expected-result: |
       Заказ успешно оформляется,от сервера получен ответ со статусом 200
-    actual-result: >
+  actual-result: >
       Выводится сообщение об успешном заказе товара ,но от сервера
       приходит сообщение с ошибкой со статусом 500
-    bugreports: null
-  - summary: |
+   
+  bugreports: 
+- summary: |
       Не работает опция закрытия уведомления через "крестик"
-    environment: |
+  environment: |
       Google Chrome.Версия 127.0.6533.89 (Официальная сборка), (64 бит)
         Windows 10 Домашняя
-    steps-to-reproduce: >
+  steps-to-reproduce: >
       1. Нажать на кнопку  " в корзину"
       2. Перейти в корзину 
       3. Нажать на кнопку "Оформить заказ"
       4.Нажать на крестик уведомления 
-    expected-result: |
+  expected-result: |
       Уведомление успешно закрывается 
-    actual-result: |
+  actual-result: |
       Уведомление не закрывается
 
       
