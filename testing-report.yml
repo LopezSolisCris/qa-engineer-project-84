@@ -1,25 +1,28 @@
 ---
 - summary: |
     Проверка добавления товара в корзину
- status: pass
+status: pass
+
 - summary: |
     Проверка оформления товара 
- status: fail
+status: fail
+
 - summary: |
     Поиск товара по ключевым словам 
- status: pass
-- summary: |
-    Удаление товара из корзины 
- status: fail
+status: pass
+
 - summary: |
     Полная очистка корзины
- status: pass
+status: fail
+
 - summary: >
     Смена языка интерфейса интернет магазина  
- status: fail
+status: fail
+
 - summary: |
     Проверка наличия мобильной версии инетрнет магазина  
- status: fail
+status: fail
+
 - summary: |
     Проверка работы фильторв цены 
- status: pass
+status: pass
