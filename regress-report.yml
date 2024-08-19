@@ -6,7 +6,7 @@ test-cases:
 
 - summary: |
     Отображение флага языка интерфейса сайта 
-  status: fail
+    status: fail
 
 - summary: |
       Проверка успешного оформления товара
@@ -18,7 +18,7 @@ test-cases:
 
  - summary: |
       Проверка работы фильтров цены
-  status: fail
+   status: fail
 
 bugreports:
   - summary: |
@@ -37,32 +37,32 @@ bugreports:
 bugreports:
   - summary: |
       Не работает функционал оформления заказа
-    environment: |
+     environment: |
       Google Chrome.Версия 127.0.6533.89 (Официальная сборка), (64 бит)
        Windows 10 Домашняя
-    steps-to-reproduce: |
-     1. Зайти на страницу сайта интернет магазина https://hexlet-products-store.vercel.app/
-     2. Нажать на кнопку  " в корзину"
-     3. Перейти в корзину 
-     4. Нажать на кнопку "Оформить заказ"
+     steps-to-reproduce: |
+      1. Зайти на страницу сайта интернет магазина https://hexlet-products-store.vercel.app/
+      2. Нажать на кнопку  " в корзину"
+      3. Перейти в корзину 
+      4. Нажать на кнопку "Оформить заказ"
     expected-result: |
       Заказ успешно оформляется,от сервера получен ответ со статусом 200
     actual-result: |
       Выводится сообщение об успешном заказе товара ,но от сервера приходит сообщение с ошибкой со статусом 500
   bugreports:
-  - summary: |
+- summary: |
       Не работает опция закрытия уведомления через "крестик"
-    environment: |
-      Google Chrome.Версия 127.0.6533.89 (Официальная сборка), (64 бит)
+  environment: |
+     Google Chrome.Версия 127.0.6533.89 (Официальная сборка), (64 бит)
        Windows 10 Домашняя
-    steps-to-reproduce: |
+  steps-to-reproduce: |
      1. Зайти на страницу сайта интернет магазина https://hexlet-products-store.vercel.app/
      2. Нажать на кнопку  " в корзину"
      3. Перейти в корзину 
      4. Нажать на кнопку "Оформить заказ"
      5.Нажать на крестик уведомления 
-    expected-result: |
+  expected-result: |
       Уведомление успешно закрывается 
-    actual-result: |
+  actual-result: |
       Уведомление не закрывается
       
