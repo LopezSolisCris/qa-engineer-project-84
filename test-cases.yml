@@ -1,116 +1,116 @@
 ---
 - summary: |
     Проверка добавления товара в корзину 
-requirement: |
-    Пользователь может положить товар в корзин
-prerequisites: |
+  requirement: |
+    Пользователь может положить товар в корзину
+  prerequisites: |
     no data
-test-data: |
+  test-data: |
     no data 
-steps:
+  steps:
     - Выбрать любой товар
     - Выбрать мышкой товар из каталога
     - Перейти в корзину
-expected-result: |
+  expected-result: |
     Выбранный пользователем товар отображается в корзине 
 
 - summary: |
     Проверка оформления заказа 
-requirement: |
+  requirement: |
     Пользователь может оформить товар из корзины
-prerequisites: |
+  prerequisites: |
     no data
-test-data: |
+  test-data: |
     no data 
-steps:
+  steps:
     - Выбрать товар из каталога
     - Перейти в корзину интернет магазина
     - Нажать на кнопку "оформить заказ"
-expected-result: |
+  expected-result: |
     Заказ успешно оформлен
 
 - summary: |
     поиск товара по ключевому слову  
-requirement: |
+  requirement: |
     Пользователь может найти товар по ключевому слову или части слова 
-prerequisites: |
+  prerequisites: |
     no data 
-test-data: |
+  test-data: |
     no data
-steps:
+  steps:
     - Ввести любой товар, например - Chanel
-expected-result: |
+  expected-result: |
     отображаются товары согласно запроса 
 
 - summary: |
     Удаление товара из корзины  
-requirement: |
+  requirement: |
     Пользователь может выборочно удалить товар из корзины 
-prerequisites: |
+  prerequisites: |
     no data
-test-data: |
+  test-data: |
     no data
-steps:
+  steps:
     - Выбрать несколько товаров и добавить их в корзину
     - Перейти в корзину
     - Нажать на кнопку "Удалить" на любом из товаров  корзины
-expected-result: |
+  expected-result: |
     Выбранный  товар удалается из корзины 
 
 - summary: |
     Полная очистка корзины  
-requirement: |
+  requirement: |
     Пользователь может удалить все товары из корзины одним кликом 
-prerequisites: |
+  prerequisites: |
     В корзине имеется несколько товаров 
-test-data: |
+  test-data: |
     no data
-steps:
+  steps:
     - Перейти в корзину интернет магазина
     - Нажать на кнопку "очистить корзину"
-expected-result: |
+  expected-result: |
     Корзина становится пустой,все товары удалены  
 
 - summary: |
     Смена языка интерфейса интернет магазина   
-requirement: |
+  requirement: |
     Пользователь может сменить язык сайта 
-prerequisites: |
+  prerequisites: |
     Пользователь находится на вкладке магазина 
-test-data: |
+  test-data: |
     Russian
-steps:
+  steps:
     - Нажать на кнопку "язык"
     - Из выпадающего списка выбрать "Russian"
-expected-result: |
+  expected-result: |
     Сайт становится доступен на русском языке 
 
 - summary: |
     Проверка мобильной версии    
-requirement: |
+  requirement: |
     Пользователь может открыть сайт магазина на мобильном устройстве  
-prerequisites: >
+  prerequisites: >
     Пользователь находится на вкладке магазина ( здесь не уверрен, в
     предусловиях,кто именно должен быть в качестве актора действия) 
-test-data: |
+  test-data: |
     Galaxy Note 2
     Iphone SE
-steps:
+  steps:
     - Открыть девтулз
     - Поочередно выбрать несколько мобильных устройств
-expected-result: >
+  expected-result: >
     сайт открыт в мобильной версии 
 
 - summary: |
     Проверка сортировки по цене     
-requirement: |
+  requirement: |
     Пользователь может отсоортировать товары по цене 
-prerequisites: |
+  prerequisites: |
     no data
-test-data: |
+  test-data: |
     Диапазон чисел от 0 до 6577,499
-steps:
+  steps:
     - Ввести любые значение от 0 до 6577,499
-expected-result: |
+  expected-result: |
     Выводятся товары в  выбранном ценовом диапазоне   
 
