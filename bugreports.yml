@@ -1,114 +1,114 @@
 ---
 - summary: |
     Не работает оформление заказа 
-environment: |
+  environment: |
     Google Chrome.Версия 127.0.6533.89 (Официальная сборка), (64 бит)
     Windows 10 Домашняя
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Нажать на кнопку  " в корзину" на товаре 
     2. Перейти в корзину  
     3. Нажать на кнопку "Оформить заказ"
-expected-result: |
+  expected-result: |
     На странице формы будет сообщение о успешном оформлении заказа
-actual-result: |
+  actual-result: |
     Выводится сообщение о успешном оформлении заказа
     В консоли браузера в Devtools выводится ошибка со статусом 500
     
 - summary: |
     Не работает "крестик" уведомления об успешном оформлении заказа
-environment: |
+  environment: |
     Google Chrome.Версия 127.0.6533.89 (Официальная сборка), (64 бит)
     Windows 10 Домашняя
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Нажать на кнопку  " в корзину"
     2. Перейти в корзину  
     3. Нажать на кнопку "Оформить заказ" 
     4. Кликнуть на крестик уведомления 
-expected-result: |
+  expected-result: |
     Уведомление закрылось 
-actual-result: |
+  actual-result: |
     Уведомление не закрывается 
     
 - summary: |
     Отсутсвует мобильная версия сайта 
-environment: |
+  environment: |
     Google Chrome.Версия 127.0.6533.89 (Официальная сборка), (64 бит)
     Windows 10 Домашняя
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. В Devtools переключиться в режим мобильного устройства (например Galaxy Note 2)
-expected-result: |
+  expected-result: |
     Сайт поддерживает мобильную версию 
-actual-result: |
+  actual-result: |
     Мобильная версия сайта отсутствует
  
 - summary: |
     Не отображается картинка флага в языковом меню
-environment: |
+  environment: |
     Google Chrome.Версия 127.0.6533.89 (Официальная сборка), (64 бит)
     Windows 10 Домашняя 
-steps-to-reproduce: |  
+  steps-to-reproduce: |  
     1. Перейти к блоку "Язык" 
     2. Развернуть выпадающий список 
-expected-result: |
+  expected-result: |
     1. Выпадает выбор языка с соответсвующими флагами
-actual-result: |
+  actual-result: |
     Выпадает выбор языка с соответсвующими флагами
     Флаг анлгийского языка не подгружается
 
 - summary: |
     Не очищается корзина 
-environment: |
+  environment: |
     Google Chrome.Версия 127.0.6533.89 (Официальная сборка), (64 бит)
     Windows 10 Домашняя 
-steps-to-reproduce: |  
+  steps-to-reproduce: |  
     1. Нажать на кнопку "В корзину " на одном или нескольких товаров   
     2. Перейти в корзину 
     3. Нажать на кнопку "очистить корзину"
     4. Обновить страницу 
-expected-result: |
+  expected-result: |
     1. Корзина очищается
-actual-result: |
+  actual-result: |
     Удаленные товары снова появляются в корзине 
 
 - summary: |
     При переключении языка не переводится описание товара  
-environment: |
+  environment: |
     Google Chrome.Версия 127.0.6533.89 (Официальная сборка), (64 бит)
     Windows 10 Домашняя 
-steps-to-reproduce: |  
+  steps-to-reproduce: |  
     1. Нажать на кнопку "Language"   
     2. Выбрать из выпадающего списка "Russian"  
-expected-result: |
+  expected-result: |
     1. Навигационные эелементы и описание товаров переводится на русский язык 
-actual-result: |
+  actual-result: |
     Описание товара не переводится на русский язык 
 
 - summary: |
     После перезагрузки страницы, сайт возвращается на английском языке 
-environment: |
+  environment: |
     Google Chrome.Версия 127.0.6533.89 (Официальная сборка), (64 бит)
     Windows 10 Домашняя
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Зайти на главную страницу магазина
     2. Нажать на кнопку "Language" 
     3. Выбрать "Russian"
     4. Перезагрузить страницу 
-expected-result: |
+  expected-result: |
     При перезагрузке страницы язык не меняется
-actual-result: |
+  actual-result: |
     При перезагрузке страницы язык меняется на английский   
 
 - summary: |
     Не работает фильтрация по хештегу товара  
-environment: |
+  environment: |
     Google Chrome.Версия 127.0.6533.89 (Официальная сборка), (64 бит)
     Windows 10 Домашняя
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Нажать на карточку любого товара 
     2. В карточке товара нажать на хештег 
-expected-result: |
+  expected-result: |
     При нажатии на хештег происходит фильтрация товаров 
-actual-result: |
+  actual-result: |
     Фильтрация товаров по хештегу не работает 
 
     
